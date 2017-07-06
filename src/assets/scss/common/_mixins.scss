@@ -1,0 +1,20 @@
+@import 'util/unit';
+@import 'util/breakpoint';
+
+@mixin transition($property: all, $duration: 0.3s, $timing : ease-in-out, $delay : 0.01s) {
+	transition: $property $duration $timing $delay;
+}
+
+@mixin reset() {
+	margin  : 0;
+	padding : 0;
+}
+
+@mixin font($family, $size, $weight, $color, $transform : none, $spacing : 0) {
+	font-family   : $family;
+	font-size     : rem-calc($size);
+	font-weight   : $weight;
+	color         : $color;
+	text-transform: $transform;
+	letter-spacing: rem-calc($spacing);
+}

@@ -1,0 +1,38 @@
+{
+  "name": "foundation-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run clean && webpack && npm run dev",
+    "dev": "webpack-dev-server --progress --colors",
+    "prod": "npm run clean && webpack -p",
+    "clean": "rimraf ./dist/*"
+  },
+  "author": "Anjana J",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "",
+    "browser-sync": "",
+    "browser-sync-webpack-plugin": "",
+    "css-loader": "",
+    "exports-loader": "",
+    "expose-loader": "",
+    "extract-text-webpack-plugin": "",
+    "file-loader": "",
+    "foundation-sites": "",
+    "html-loader": "",
+    "html-webpack-plugin": "",
+    "imports-loader": "",
+    "jquery": "",
+    "node-sass": "",
+    "postcss-loader": "",
+    "resolve-url-loader": "",
+    "rimraf": "",
+    "sass-loader": "",
+    "style-loader": "",
+    "url-loader": "",
+    "webpack": "",
+    "webpack-dev-server": ""
+  }
+}
